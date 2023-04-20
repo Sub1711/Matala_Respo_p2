@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    margin: 0;
+}
+#for_logo {
+    background-color: #f1f1f1;
+    font-size: 40px;
+}
+#for_logo > i {
+    float: left;
+    margin-top: 20px;
+    margin-left: 45px;
+    font-size: 40px;
+}
+.container_for_text_and_rishum {
+    background-image:url('images/deshe.jpg');
+    display: flex;
+}
+#text_left {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    margin: 0 0 0 65px;
+}
+#text_left > h1, #text_left > h2 {
+    background-color: black;
+    margin-bottom: -15px;
+    padding: 10px;
+}
+.rishum_right {
+    flex: 40%;
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icyv_rishum_right {
+    max-width: 350px;
+    min-height: 400px;
+    background-color: #fffffff0;
+    padding: 0 15px 0 15px;
+}
+.form {
+    font-size: 17px;
+    color: white;
+    padding: 15px;
+}
+#form_koteret, #fill_for_form {
+    text-align: center;
+}
+#fill_for_form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -10px;
+    padding: 0 30px 0 30px;
+    font-size: 19px;
+}
+input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-color: black;
+}
+input[type=submit] {
+    color: white;
+    background-color:rgb(53, 157, 53) ;
+}
+.container_for_pics {
+    display: flex;
+    align-items: baseline;
+}
+#Learn_about {
+    text-align: center;
+}
+.pics {
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pics > img{
+    width: 170px;
+    border-radius: 80px;
+    background-color: #9e9e9e4a;
+    padding: 30px;
+}
+.icyv_pic_box {
+    padding: 20px;
+}
+
+.icyv_pic_box > ul {
+    text-align: center;
+    list-style: none;
+}
+.icyv_pic_box > li {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+}
+#about_company {
+    background-color: #deb88780;
+    text-align: center;
+    padding: 15px 50px 15px 50px
+}
+.users_container {
+    display: flex;
+    margin: 30px 15px 30px 15px;
+}
+.icyv_user_box {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+#user_box_left {
+    border-right: 2px solid;
+}
+.users > img {
+    width: 200px;
+    border-radius: 80px;
+    background-color: #9e9e9e4a;
+    padding: 15px;
+}
+#footer_div {
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#logo_footer {
+    float: left;
+    margin-top: 9px;
+    margin-left: 45px;
+    font-size: 25px;
+}
+.footer_box {
+    display: flex;
+    flex: 50%;
+}
+#footer_right {
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.mobile_container_for_pics {
+    display: none;
+}
+
+.mobile_icyv_pic_box {
+    display: flex;
+}
+.mobile_pics {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile_pics > img{
+    width: 110px;
+    border-radius: 80px;
+    background-color: #9e9e9e4a;
+    padding: 20px;
+    margin: 0px 15px 0px 15px;
+}
+
+.mobile_icyv_user_box {
+    flex: 50%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container_for_text_and_rishum {
+      flex-direction: column;
+      align-items: center;
+    }
+    #text_left {
+        margin: 40px;
+    }
+    #text_left > h1, #text_left > h2 {
+        font-size: 30px;
+    }
+    .icyv_rishum_right {
+        margin-bottom: 70px;
+    }
+    #fill_for_form {
+        padding: 0 5px 0 5px;
+        font-size: 15px;
+    }
+    .container_for_pics, .users_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px 0 -30px;
+    }
+    #about_company {
+        padding: 2px 25px 2px 25px;
+        font-size: 20px;
+    }
+    #logo_footer {
+        margin-top: 9px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    #footer_right {
+        padding-right: 15px;    
+    }
+    #user_box_left {
+        border-bottom: 1px solid;
+        border-right: 0;
+    }
+    .container_for_pics {
+        display: none;
+    }
+    .mobile_container_for_pics {
+        display: block;
+        padding: 0px 31px 10px 10px;
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+}
